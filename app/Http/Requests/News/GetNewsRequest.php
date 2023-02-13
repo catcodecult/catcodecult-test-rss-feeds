@@ -25,8 +25,8 @@ class GetNewsRequest extends FormRequest
     {
         return [
             'columns' => 'sometimes',
-            'page' => 'sometimes',
-            'order' => 'sometimes'
+            'page' => 'sometimes|integer',
+            'order' => 'sometimes|in:asc,desc'
         ];
     }
 }
